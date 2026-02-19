@@ -4,39 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Laboratorio Web — Nico</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:40px;background:#0b0d10;color:#e8eef6}
-    .wrap{max-width:860px;margin:0 auto}
-    .card{background:#12151b;border:1px solid #1e2530;border-radius:16px;padding:18px;margin:14px 0}
-    a{color:#5eead4;text-decoration:none}
-    small{color:#a9b3c1}
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <div class="wrap">
-    <h1>Laboratorio Web</h1>
-    <p>Este sitio es mi espacio de práctica para aprender a construir y gestionar sitios web.</p>
-
-    <div class="card">
-      <h2>Objetivos</h2>
-      <ul>
-        <li>HTML / CSS / JavaScript</li>
-        <li>Git + GitHub</li>
-        <li>Publicación con GitHub Pages</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>Estado</h2>
-      <p>Primer deploy en proceso.</p>
-      <small>Repo: <a href="https://github.com/nicolasminatta-dev/nicolasminatta-dev.github.io" target="_blank">GitHub</a></small>
-    </div>
-
-    <small>© <span id="y"></span> Nico</small>
+  <main class="wrap">
+<header class="site-header">
+  <div class="brand">
+    <h1 class="title">Laboratorio Web</h1>
+    <p class="subtitle">HTML + CSS + JS (vanilla)</p>
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <nav class="site-nav">
+    <a href="index.html">Inicio</a>
+    <a href="about.html">Sobre mí</a>
+    <a href="proyectos.html">Proyectos</a>
+  </nav>
+
+  <div class="topbar">
+    <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">
+      Tema claro
+    </button>
+  </div>
+    </header>
+    <section class="grid">
+      <div class="card">
+        <h2>Objetivos</h2>
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Git + GitHub</li>
+          <li>Publicación con GitHub Pages</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Enfoque</h2>
+        <p>Aprender como arquitecto: entendiendo cada ladrillo.</p>
+      </div>
+
+      <div class="card">
+        <h2>Estado</h2>
+        <p>Primer deploy en proceso.</p>
+        <small>
+          Repo:
+          <a href="https://github.com/nicolasminatta-dev/nicolasminatta-dev.github.io" target="_blank">
+            GitHub
+          </a>
+        </small>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small>© <span id="y"></span> Nicolás Minatta</small>
+    </footer>
+
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

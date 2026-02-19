@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto — Laboratorio Web</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <main class="wrap">
+
+    <header class="site-header">
+      <div class="brand">
+        <h1 class="title">Contacto</h1>
+        <p class="subtitle">Enviame un mensaje</p>
+      </div>
+
+      <nav class="site-nav">
+        <a href="index.html">Inicio</a>
+        <a href="about.html">Sobre mí</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="topbar">
+        <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">
+          Tema claro
+        </button>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Formulario</h2>
+
+        <!-- En el próximo paso reemplazamos ACTION por el endpoint real -->
+        <form class="contact-form" action="https://formspree.io/f/xeelzwpj" method="POST">
+          <label>
+            Nombre
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+<input type="text" name="_gotcha" style="display:none">
+          <button class="btn" type="submit">Enviar</button>
+
+          <p class="form-hint" aria-live="polite">
+            (En el próximo paso lo conectamos para que envíe de verdad.)
+          </p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Qué vas a aprender acá</h2>
+        <ul>
+          <li>Cómo se estructura un form (HTML)</li>
+          <li>Validación básica (required, type=email)</li>
+          <li>Qué es un endpoint y un POST</li>
+          <li>Cómo enviar sin backend propio (ideal para GitHub Pages)</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <small>© <span id="y"></span> Nicolás Minatta</small>
+    </footer>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
